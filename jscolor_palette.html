@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	margin-top: 0px;
+	margin-left:0px;
+	background-color: #92B5C8;
+}
+
+#bgcolorInput {
+	
+	border-color: #000000;	
+	width: 60px;
+	height: 30px;
+	text-align: center;
+}
+</style>    
+</head>
+
+<body id='body' >
+<script src="jscolor.js"></script>
+
+<input id="bgcolorInput" class="jscolor {onFineChange:'update(this)'}" value="#92B5C8">
+</body>
+
+<script>
+function update(jscolor) {
+    document.getElementById('body').style.backgroundColor = '#' + jscolor
+}
+</script>
+</html>
